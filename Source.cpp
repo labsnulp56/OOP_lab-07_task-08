@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 #include <vector>
 #include <fstream>
@@ -18,17 +18,17 @@ int main()
 	fs.open(path);
 	if (!fs.is_open())
 	{
-		cout << "Ïîìèëêà â³äêðèòòÿ ôàéëó äëÿ ç÷èòóâàííÿ!" << endl;
+		cout << "ÐŸÐ¾Ð¼Ð¸Ð»ÐºÐ° Ð²Ñ–Ð´ÐºÑ€Ð¸Ñ‚Ñ‚Ñ Ñ„Ð°Ð¹Ð»Ñƒ Ð´Ð»Ñ Ð·Ñ‡Ð¸Ñ‚ÑƒÐ²Ð°Ð½Ð½Ñ!" << endl;
 	}
 	else
 	{
-		cout << "Ôàéë äëÿ ç÷èòóâàííÿ óñï³øíî â³äêðèòî!" << endl;
+		cout << "Ð¤Ð°Ð¹Ð» Ð´Ð»Ñ Ð·Ñ‡Ð¸Ñ‚ÑƒÐ²Ð°Ð½Ð½Ñ ÑƒÑÐ¿Ñ–ÑˆÐ½Ð¾ Ð²Ñ–Ð´ÐºÑ€Ð¸Ñ‚Ð¾!" << endl;
 		for (int i = 0; i < myVector.size(); i++)
 		{
 			fs >> myVector[i];
 		}
 	}
-	!output.is_open() ? cout << "Ïîìèëêà â³äêðèòòÿ ôàéëó äëÿ çàïèñó!" << endl : cout << "Ôàéë äëÿ çàïèñó óñï³øíî â³äêðèòî!" << endl;
+	!output.is_open() ? cout << "ÐŸÐ¾Ð¼Ð¸Ð»ÐºÐ° Ð²Ñ–Ð´ÐºÑ€Ð¸Ñ‚Ñ‚Ñ Ñ„Ð°Ð¹Ð»Ñƒ Ð´Ð»Ñ Ð·Ð°Ð¿Ð¸ÑÑƒ!" << endl : cout << "Ð¤Ð°Ð¹Ð» Ð´Ð»Ñ Ð·Ð°Ð¿Ð¸ÑÑƒ ÑƒÑÐ¿Ñ–ÑˆÐ½Ð¾ Ð²Ñ–Ð´ÐºÑ€Ð¸Ñ‚Ð¾!" << endl;
 	sort(myVector.begin(), myVector.end());
 	for (int i = 0; i < myVector.size(); i++)
 	{
@@ -36,16 +36,16 @@ int main()
 	}
 	if (binary_search(myVector.begin(), myVector.end(), 3))
 	{
-		cout << "\n ÷èñëî 3 çíàéäåíî ó ìàñèâ³!\n";
+		cout << "\n Ñ‡Ð¸ÑÐ»Ð¾ 3 Ð·Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾ Ñƒ Ð¼Ð°ÑÐ¸Ð²Ñ–!\n";
 	}
 	else 
 	{
-		cout << "\n ÷èñëî 3 íå çíàéäåíî ó ìàñèâ³! \n";
+		cout << "\n Ñ‡Ð¸ÑÐ»Ð¾ 3 Ð½Ðµ Ð·Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾ Ñƒ Ð¼Ð°ÑÐ¸Ð²Ñ–! \n";
 	}
 	for (int i = 0; i < myVector.size(); i++)
 	{
 		output << myVector[i] << " ";
-	}
+	} 
 	fs.close();
 	output.close();
 	system("pause");
